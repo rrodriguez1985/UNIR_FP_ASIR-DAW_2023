@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en HTML5</title>
+</head>
+<body>
+    <h1>Listas en HTML5</h1>
+    En HTML5 disponemos de tres tipos de listas que nos van a permitir organizar mejor
+    <br>el texto para darle un formato más conciso y claro.
+    <br>Los tipos de listas que podemos usar/disponer son los siguientes:
+    <ul>
+        <li><b>Listas Ordenadas (ol):</b> Son listas ordenadas, van numeradas,
+            <br>que se definen como Ordered List</li>
+        <li><b>Listas Desordenadas (ul):</b> Son listas desordenadas, no van numeradas,
+        <br>que se definen como Unordered List</li>
+        <li><b>Listas de Definición (dl):</b> Son listas de definición, que se definen 
+            <br>como Definition List</li>
+    </ul>
+    <br>Dentro de un elemento lista, sea del tipo que sea, podemos insertar cualquier tipo
+    <br>de elemento: texto, imágenes, vídeos, tablas, audios, listas, etc.
+    <br>Por lo tanto, se pueden combinar listas ordenadas con desordenadas y viceversa.
+    <hr>
+    <h2>Listas Ordenadas (ol)</h2>
+    La estructura de una lista ordenada es la siguiente:
+    <ul>
+        <li>La lista está formada por la etiqueta de apertura y cierre ol</li>
+        <li>Internamente, dispondrá de una etiqueta li en la que podremos listar
+            <br>el contenido de nuestra lista. Es decir, pondremos los elementos
+            <br>que queremos que se muestren en nuestro listado.
+        </li>
+        <li>La etiqueta li irá siempre tanto en listas ordenadas como desordenadas
+            <br>porque son parte de su estructura.
+        </li>
+    </ul>
+    <br>Ejemplo de lista ordenada:
+    <ol>
+        <li>Windows 11</li>
+        <li>Ubuntu</li>
+        <li>Kali Linux</li>
+        <li>MacOS Yosemite</li>
+        <li>Linux Mint</li>
+    </ol>
+    <h2>Listas Desordenadas (ul)</h2>
+    La estructura de una lista desordenada es la siguiente:
+    <ul>
+        <li>La lista está formada por la etiqueta de apertura y cierre ul</li>
+        <li>Internamente, dispondrá de una etiqueta li en la que podremos listar
+            <br>el contenido de nuestra lista. Es decir, pondremos los elementos
+            <br>que queremos que se muestren en nuestro listado.
+        </li>
+        <li>La etiqueta li irá siempre tanto en listas ordenadas como desordenadas
+            <br>porque son parte de su estructura.
+        </li>
+    </ul>
+    <br>Ejemplo de lista desordenada:
+    <ul>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>C++</li>
+    </ul>
+    <h2>Formateado de Listas Ordenadas y Desordenadas</h2>
+    HTML5 nos permite en cierta medida poder customizar las listas a través de una serie
+    <br>de atributos básicos como el atributor start y atributo type.
+    <br>Con estos atributos podemos cambiar el orden de comienzo de las listas ordenadas
+    <br>y el tipo de icono (podemos poner letras, números normales y romanos)
+    <br>y en el caso de listas desordenadas podemos poner iconos de circulos, discos y 
+    <br>cuadrados.
+    <br><b>Lista Ordenada aplicando atributos type y start</b>
+    <ol type="a" start="5">
+        <li>Podemos poner letras en mayúscula (A)</li>
+        <li>Podemos poner letras en minúsculas (a)</li>
+        <li>Podemos poner cifras romanas en mayúscuas y minúsculas (i I,ii II, iii III,iv IV....n)</li>
+        <li>Podemos poner números normales (1,2,3...n)</li>
+        <li>Podemos indicar en qué posicion queremos que comience</li>
+    </ol>
+    <br><b>Lista Desordenada aplicando atributos type</b>
+    <ul type="circle">
+        <li>Podemos poner disc (viñetas redondas rellenas)</li>
+        <li>Podemos poner circle (viñetras redondas huecas)</li>
+        <li>Podemos poner square (cuadrados)</li>
+    </ul>
+    <h2>Listas de Definición (dl)</h2>
+    Las listas de definición tienen una estructura totalmente distinta a las anteriores.
+    <br>Tienen la siguiente estructura:
+    <ul>
+        <li>La etiqueta <b>dl:</b> Description List delimita la lista completa</li>
+        <li>La etiqueta <b>dt:</b> Description Term delimitar el término</li>
+        <li>La etiqueta <b>dd:</b> Definition Description delimitar las definiciones</li>
+    </ul>
+    <br><b>Ejemplo de Lista de Definición</b>
+    <br>
+    <dl>
+        <dt><b>dl</b></dt>
+            <dd>Crea la caja que contiene los items de la lista</dd>
+        <dt><b>dt</b></dt>
+            <dd>Es el Item que contiene un término a definir</dd>
+        <dt><b>dd</b></dt>
+            <dd>Es el Item que contiene una definición</dd>
+    </dl>
+
+</body>
+</html>
