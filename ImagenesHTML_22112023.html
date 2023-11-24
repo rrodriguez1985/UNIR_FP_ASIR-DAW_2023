@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes y Multimedia</title>
+</head>
+<body>
+    <h1>Imágenes en HTML</h1>
+    En informática podemos distinguir dos tipos de imágenes:
+    <ul>
+        <li><b>Imágenes de mapa de bits:</b> están formadas por puntos de colores. 
+            <br>Ejemplo: imágenes de los videjuegos de 8 bits (supermario, imágenes de pixel, etc.)</li>
+        <li><b>Imágenes vectoriales:</b> son imágenes que están formadas por formas geométricas.
+        <br>Ejemplo: imáganes de iconos, ilustraciones, etc.</li>
+    </ul>
+    <h3>Ventajas y Desventajas de imáganes de Mapa de Bits</h3>
+    <ul>
+        <li>Ventaja: permiten representar imáganes sin formas definidas.</li>
+        <li>Desventaja: pierden mucha calidad al ampliarlas y ocupan mucho espacio en el disco duro.</li>
+    </ul>
+    <h3>Ventajas y Desventajas de imáganes Vectoriales</h3>
+    <ul>
+        <li>Ventaja: ocupan muy poco espacio y se pueden ampliar a cualquier escala sin perder la calidad</li>
+        <li>Desventaja: No permiten represarn imáganes sin formas definidas, como sí ocurre con las fotografías.</li>
+    </ul>
+    <h3>Insertar Imágenes en HTML</h3>
+    Para poder insertar una imagen en un documento HTML, tendremos que utilizar la siguiente estructura:
+    <ul>
+        <li><b>img:</b> La etiqueta img, es una monoetiqueta, que utilizaremos para poder insertar imágenes</li>
+        <li><b>Atributo src:</b> El atributo src (source), nos ayudará para localizar la imagen que queremos insertar</li>
+        <li>Link de la dirección / ubicación de nuestra imagen con el formato (extensión) que tiene.
+            <br>Ejemplo: foto.jpg / foto.png / foto.jpeg / foto.svg
+        </li>
+    </ul>
+    <br><img src="img/rick_morty.png" alt="Esta foto es una foto de Rick and Morty" width="500px" height="400px">
+    <br><img src="img/homer.gif" alt="" width="500px" height="400px" title="Esta es la situación que me pasa cuando pregunto en clase y mis alumnos no saben la respuesta...">
+    <br><img src="img/patricio.jpg" alt="" width="500px" height="400px">
+    <br>
+    <h3>Atributos en img</h3>
+    <ul>
+        <li><b>src:</b> indica la dirección o URI de la imagen</li>
+        <li><b>alt:</b> "Alternativo", lo que indica es un breve texto de la imagen en caso de que 
+        <br> esta imagen, no se pueda cargar o se encuentre disponible.</li>
+        <li><b>width y height:</b> Sirven para dar un tamaño de ancho y alto a la foto</li>
+        <li><b>usemap:</b> Se utiliza para hacer mapeados de imagenes</li>
+        <li><b>title:</b> sirve para mostar un tip con información sobre la foto o imagen sobre la que se situa.
+        <br>Es decir, cuando pasamos el ratón sobre la foto, aparecerá una caja de texto con información</li>
+    </ul>
+    <h3>Etiqueta Figure</h3>
+    Permite asocionar un texto con una imágen. Es decir, como si tuvieramos un pie de página.
+    <br>Estructura:
+    <ul>
+        <li>figure: es la etiqueta padre.</li>
+        <li>img: insertar la imagen</li>
+        <li>figcaption: es una etiqueta que contiene el texto asociado a la imagen</li>
+    </ul>
+    <figure align="right">
+        <img src="img/logo.png" alt="logos lengujes HTML CSS y JS">
+        <figcaption>Logos lengujes HTML CSS y JS <img src="img/icono.png" width="48px" height="48px"></figcaption>
+    </figure>
+    <h3>Insertar video de Youtube en HTML</h3>
+    <iframe width="400px" height="300px" src="https://www.youtube.com/embed/vlCXdvcgiE0" title="Aprende Git en 15 Minutos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+    <iframe width="400px" height="300px" src="https://www.youtube.com/embed/ZrRbJRTRGeM" title="Foo Fighters - Resolve (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+    <h3>Insertar un Mapa de Google Maps en HTML</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6772108274918!2d-3.710663723559921!3d40.4160010556829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228792da1802b%3A0x3d53fb8c68aab871!2sPl.%20Mayor%2C%2023%2C%2028012%20Madrid!5e0!3m2!1ses!2ses!4v1700686820712!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
