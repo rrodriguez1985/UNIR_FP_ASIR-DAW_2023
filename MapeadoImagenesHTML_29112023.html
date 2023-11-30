@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapeado</title>
+</head>
+<body>
+    <h1>Mapeado Imágenes HTML</h1>
+    Mapeado hace referencia a la posibilidad de asingar una región o zona de una imagen, para que cuando
+    <br>seleccionemos dicha región, nos permita ir a un vínculo de una web externa, interna o sección/documento
+    <br>al que nosotros queramos.
+    <br>Utilizaremos para poder hacer el mapeado en html, una etiqueta que se llama map.
+    <br>La etiqueta map, nos permitirá localizar e identificar zonas en imágenes para poder etiquetar y redireccionar
+    <br> dicha área a un link o zona que nosotros.
+    <br>La estructura para hacer un mapeado, estará formada por las siguientes etiquetas y atributos:
+    <ul>
+        <li><b>map:</b> esta etiqueta indica que vamos a usar y establecer un mapeado en una imagen</li>
+        <li><b>name:</b> es un atributo que me asigna un nombre al mapa que debe de coincidir con el que hemos 
+        <br>establecido en el usemap.</li>
+        <li><b>usemap:</b> es un atributo que se añade en la imagen para indicar que vamos a usar un mapeado.
+        <br>Se suele indicar de la siguiente manera: usemap=#nombre_que_queramos</li>
+        <li><b>shape:</b> especificar la región que queremos mapear. Existen 4 tipo de regiones:
+        <br>Default, Rect, Circle, Poly.</li>
+        <li><b>Default:</b> es un atributo que indica que la región del mapeado es por defecto.</li>
+        <li><b>Rect:</b> es un atributo que indica que la región del mapeado es rectangular. Para poder
+        <br>establecer que el área es rectangular, utilizaremos unas coordenadas que vienen dadas por el puntos
+        <br> X,Y del vértice superior izquierdo de la imagen, y el punto X,Y del vértice inferior derecho.</li>
+        <li><b>Circle:</b> es un atributo que indica que la región del mapeado es de forma circular. Para poder
+        <br>establecer el área, se toma un punto central X,Y y se le asigna un valor del radio de la circunferencia.</li>
+        <li><b>Poly:</b> es un atributo que indica que la región del mapeado va a tener forma poligonal.Para poder
+            <br>establecer el área, se debe tomar como mínimo 3 puntos de coordenadas X,Y, y para poder establecer sus
+            <br>valores, se seguirá el sentido de las agujas del reloj (izq a der)
+        </li>
+        <li><b>Coordenadas:</b> indican la posición en la pantalla del área a mapear.</li>
+    </ul>
+    <hr>
+    <h3>Ejemplo de mapeado imágenes</h3>
+    <img src="img/marvel_mapeado.jpg" usemap="#marvel">
+    <map name="marvel">
+        <!-- Mapeado rect: necesitamos un punto X,Y del vértice superior izq, y un punto X,Y del vértice inferior derecho -->
+        <area shape="rect" coords="0,0,378,399" href="https://unirfp.unir.net/"  target="_blank">
+        <!-- <area shape="rect" coords="379,0,748,400" href="https://marvel.com"  target="_blank"> -->
+        <!-- Mapeado circle: Necesito un punto X,Y que será considerado como un punto medio, y un valor de radio para la circunferencia -->
+        <area shape="circle" coords="505,96,39" href="https://marvel.com"  target="_blank">
+        <!-- Mapeado Poly: Necesito como mínimo 3 puntos de coordenadas. Se establecen estos puntos en el sentido de las agujas del reloj -->
+        <area shape="poly" coords="496,163,518,157,515,174,501,179" href="https://google.com"  target="_blank">
+    </map>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio y Video HTML</title>
+</head>
+<body>
+    <h1>Audio y Video en HTML5</h1>
+    En HTML5, que existen unas etiquetas específicas para poder insertar archivos tanto de audio como de video.
+    <br>Las etiquetas que utilizaremos son: etiqueta audio de apertura y cierra para insertar audio.
+    <br>La etiqueta video de apertura y cierre para insertar archivos de video.
+    <br>Atributos comunes que podemos usar tanto para audio como para video
+    <ul>
+        <li>src: sirve para vincular el archivo de audio o vídeo a nuestra web</li>
+        <li>preload: es usato en e audio y vídeo para almacenar archivos  de gran tamaño.</li>
+        <li>mediagroup: para realizar la agrupación de elementos multimedia.</li>
+        <li>autoplay: reproduce al inicio</li>
+        <li>loop: reproduce de manera infinita (bucle)</li>
+        <li>muted: silenciar el audio</li>
+        <li>controls: controles de nuestro reproductor multimedia</li>
+    </ul>
+    <br>Atributos sólo para video
+    <ul>
+        <li>width y height</li>
+        <li>poster: insertar una imagen previa en el video</li>
+    </ul>
+    <hr>
+    <h3>Ejemplo de audio en HTML5</h3>
+    <audio src="multimedia/audio.mp3" controls></audio>
+    <h3>Ejemplo de Video en HTML5</h3>
+    <video src="multimedia/video.mp4" controls width="400px" height="300px" poster="img/homer.gif"></video>
+</body>
+</html>
