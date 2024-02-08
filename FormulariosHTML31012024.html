@@ -132,5 +132,165 @@
                 <input type="range" name="numrango" id="" value="25" min="10" max="50" step="5">
             </form>
     <br>
+    <h1>Campos de Entrada Numéricos: Fecha y Hora</h1>
+    Dentro de los formularios de HTML, podemos utilizar un tipo de input que nos permite estrabler elementos de fecha y hora.
+    <br>Entre los tipos que tenemos, podemos destacar los siguientes.
+    <ul>
+        <li><b>Fecha:</b> Utilizamos el input = date</li>
+        <li><b>Hora:</b> Utilizaremos el input = time</li>
+        <li><b>Fecha y hora local</b>Utilizaremos el input = datetime-local</li>
+        <li><b>Mes</b>Utilizaremos el input = month</li>
+        <li><b>Semana</b>Utilizaremos el input = week</li>
+    </ul>
+    <br>Ejemplos:
+    <br>
+    <br>Fecha: <input type="date" name="" id="">
+    <br>
+    <br>Hora: <input type="time" name="" id="">
+    <br>
+    <br>Fecha y hora local: <input type="datetime-local" name="" id="">
+    <br>
+    <br>Mes: <input type="month" name="" id="">
+    <br>
+    <br>Semana: <input type="week" name="" id="">
+    <br>
+    <br>Ejemplo de Formulario con Fechas y Horas con max, min y step
+    <br>
+    <form action="http://mipaginaweb.com/basededatos.php" method="post" name="formulario">
+        Seleccione la fecha deseada: <input type="date" name="dia" id="" min="2024-02-07" max="2024-05-05" step="2">
+        <br>
+        <br>Seleccione la hora deseada: <input type="time" name="hora" id="" min="18:00" max="23:00" step="3600">
+        <br>
+    </form>
+    <hr>
+    <h1>Campos de Entrada de Información con controles: Casillas y Botones</h1>
+    Hay dos tipos de campos de entrada de información de controles, que son los siguientes:
+    <ul>
+        <li>Casillas de Verificación (activado o desactivado): input type = checkbox</li>
+        <li>Botones de radio (botones de selección única): input type = radio</li>
+    </ul>
+    <br>Ejemplo de Formularios con Checkbox y Botones radio
+    <br>
+    <form action="http://mipaginaweb.com/basededatos.php" method="post" name="formulario">
+        Seleccione Titulación que está Estudiando Actualmente:
+        <br><input type="radio" name="FP" id="" value="ASIR">ASIR
+        <br><input type="radio" name="FP" id="" value="DAM">DAM
+        <br><input type="radio" name="FP" id="" value="DAW">DAW
+        <br>Le gustaría seguir formándose en el área IT?
+        <br><input type="checkbox" name="formacion" id="" checked>SI
+        <br><input type="checkbox" name="formacion" id="">NO
+    </form>
+    <hr>
+    <h1>Listas de Selección</h1>
+    Se utilizan, cuando por ejemplo, las casillas de verificación se nos quedan cortas o necesitamos mostrar una lista más extensa de datos.
+    <br> A través de estas listas podemos mostrar al usuario varias opciones disponibles para elegir una de ellas.
+    <br>Entre los tipos de listas podemos destacar las siguientes:
+    <ul>
+        <li>Listas (cerradas) de opciones: select y option</li>
+        <li>Listas (abiertas) de opciones: datalist</li>
+    </ul>
+    <h3>Ejemplo de Lista Cerrada: Select y Option</h3>
+    Lista de Sistemas Operativos:
+    <select name="SistemasOperativos" id="">
+        <option value="1">Windows 11</option>
+        <option value="2">Ubuntu</option>
+        <option value="3">Linux Mint</option>
+        <option value="4">Mac OS Yosemite</option>
+    </select>
+    <br>
+    <h3>Ejemplo de Lista Abierta: Datalist</h3>
+    Materias de DAW y ASIR:<input list="materia">
+        <datalist id="materia">
+            <option value="FHW"></option>
+            <option value="ISO"></option>
+            <option value="SSII"></option>
+            <option value="LMSGE"></option>
+            <option value="PROG"></option>
+            <option value="BBDD/GBBDD"></option>
+        </datalist>
+        <br>
+        <br>
+        <h3>Listas de Selección Múltiple</h3>
+        <form action="http://mipaginaweb.com/basededatos.php" method="post" name="formulario">
+            Seleccione Titulación que está Estudiando Actualmente:
+            <br><select name="combo" id="" multiple>
+                <optgroup label="ASIR">
+                    <option value="1" label="FHW"></option>
+                    <option value="2" label="ISO"></option>
+                    <option value="3" label="PAR"></option>
+                    <option value="4" label="LMSGE"></option>
+                    <option value="5" label="GBBDD"></option>
+                </optgroup>
+                <optgroup label="DAW">
+                    <option value="6" label="ED"></option>
+                    <option value="7" label="BBDD"></option>
+                    <option value="8" label="PROG"></option>
+                    <option value="9" label="LMSGE"></option>
+                    <option value="10" label="SSII"></option>
+                </optgroup>
+            </select>
+        </form>
+        <h1>Selección de Colores</h1>
+        Selecciona el color que deseas: <input type="color" name="" id="">
+        <h1>Seleccionar Archivos</h1>
+        Adjuntar un archivo a nuestro envior del formulario.
+        <br>A través del atributo accept, podemos delimitar e indicar el tipo de archivo (foramto) que queremos que se adjunte.
+        <br><input type="file" name="" id="" value="Adjuntar Archivos" accept=".pdf, .png" multiple>
+        <hr>
+        <h1>Agrupación de Campos</h1>
+        Son etiquetas que nos permite organizar los elementos de nuestros formularios reagrupándolos por categorías o temáticas, entre otras cosas.
+        <ul>
+            <li><b>Fieldset:</b> agrupar de manera visual los campos de entrada por temática.</li>
+            <li><b>Legend:</b> Una leyenda para la etiqueta fieldset</li>
+            <li><b>Label:</b>relacionar campo y texto de un formulario</li>
+        </ul> 
+        <br>
+        <br>Ejemplo de Formulario Sencillo:
+        <br><form action="mailto:raul.rodriguez@proeducaglobal.com" method="post" name="formulario">
+            <fieldset>
+                <legend>Ficha del Alumno</legend>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    Nombre: <input type="text" name="name" id="" placeholder="Indica tu nombre de pila">
+                    <br>
+                    Apellidos: <input type="text" name="apellidos" id="" placeholder="1º y 2º apellido">
+                </fieldset>
+                <fieldset>
+                    <legend>Formación Académica</legend>
+                    <input type="checkbox" name="SinEstudios" id="">Sin estudios
+                    <br><input type="checkbox" name="ESO" id="" checked>ESO
+                    <br><input type="checkbox" name="Bach" id="">Bachillerato
+                    <br><input type="checkbox" name="FP" id="">FP
+                    <br><input type="checkbox" name="Grado Universitario" id="">Grado Universitario
+                    <br><input type="checkbox" name="Master" id="">Master
+                </fieldset>
+            </fieldset>
+        </form>
+        <hr>
+        <h1>Botones en Formularios HTML</h1>
+        Podemos distinguir 4 tipos de botones para usarlos en los formularios de HTML
+        <ul>
+            <li><b>Botón de envío del formulario:</b>input type = submit</li>
+            <li><b>Botón de envío con imágen:</b> input type = image</li>
+            <li><b>Botón de reseteo / borrado:</b> input type = reset</li>
+            <li><b>Botón sin funcionalidad:</b> intpu type =  button o definido con las etiquetas de apertura y cierre button</li>
+        </ul>
+        <br>
+        <h3>Ejemplo de botones: envio (submit)</h3>
+        <form action="http://www.unirfp.es">
+            Nombre y Apellido: <input type="text" name="" id=""><input type="submit" value="Enviar correo a Raúl">
+        </form>
+        <h3>Ejemplo de botones: envío con imagenes</h3>
+        <form action="http://www.unirfp.es">
+            Nombre y Apellido: <input type="text" name="" id=""><input type="image" src="img/boton.png" width="35px" height="35px">
+        </form>
+        <h3>Ejemplo de botones: borrado o reset</h3>
+        <form action="http://www.unirfp.es">
+            Nombre y Apellido: <input type="text" name="" id=""><input type="submit" value="Registrar"> <input type="reset" value="Eliminar">
+        </form>
+        <h3>Ejemplo de botones: Botón sin funcionalidad o funcionalidad con JS (JavaScript)</h3>
+        <form action="http://www.unirfp.es">
+            <button onclick="alert('Hola chicxs de ASIR/DAW, esto es un botón en JS dentro de un formulario de HTML.')">Pincha aquí</button>
+        </form>
 </body>
 </html>
