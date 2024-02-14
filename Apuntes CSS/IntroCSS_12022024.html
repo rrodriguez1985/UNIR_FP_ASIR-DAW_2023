@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a CSS</title>
+</head>
+<body>
+    <h1>Introducción a CSS en HTML</h1>
+    En el diseño web, podemos establecer dos estructuras principales como las que van a definir nuestra web:
+    <ul>
+        <li>La estructura: definir cómo es nuestra página web en cuanto a elementos que lo forman. 
+            <br>Ejemplo:table, img, form, p, div, ul/ol, etc.</li>
+        <li>La apariencia de cómo va a ser nuestra página web: colores, tipografías, alineaciones, etc.</li>
+    </ul>
+    <br>En las primeras páginas web que se creaban, se establecía en un mismo documento la estructura con la apariencia.
+    <br>Antes, se mezclaba tanto la información (contenido) como la forma de represanterse (el diseño o formato) de una web.
+    <br>Actualmente, esto ha cambiado, y se tiene por un lado la estructura y por el otro la apariencia.
+    <br>La apariencia en las páginas web, se establece con un lenguaje que se llama CSS (Cascading Style Sheets), lo que
+    <br>conocemos comúnmente como HOJAS DE ESTILO EN CASCADA.
+    <hr>
+    En base a esto, podríamos definir HTML y CSS como lo siguiente:
+    <ul>
+        <li>HTML: Define el contenido de nuestra página web: ¿Qué hay?(texto, imágenes, tablas, video, audio, formularios, etc)</li>
+        <li>CSS: Definir la presentación de nuestra página web: ¿Cómo es? (color de fondo, tamaño, tipografía, disposición, etc)</li>
+    </ul>
+    <img src="img/HTMLvsCSS.jpg" alt="">
+    <br>
+    <h3>Funcionamiento y características básicas de CSS</h3>
+    <ul>
+        <li>Las hojas de estilo CSS, son complementos a las etiquetas HTML. Lo que hacen es mejorar la presentación y aspecto de estas.</li>
+        <li>CSS se utiliza con el fin de separar el contenido (HTML) de la presentación/apariencia de las web. Esto se hace, para tener
+            <br>un código mucho más limpio y claro a la hora de poderlo modificar, añadir, etc. elementos a nuestros proyectos.
+        </li>
+        <li>CSS intenta evitar la excesiva utilización de tablas en las páginas web. Es decir, a la hora de maquetar webs, se intenta 
+            <br> utilizar etiquetas semánticas de HTML en lugar de usar tablas que permiten menos dinamismo y flexibilidad. Esto permite
+            <br>que las webs se puedan adaptar de una manera mucho más flexible a los distintos dispositivos multimedia.
+        </li>
+        <li>No se indica en el código HTML el estilo del documento sino que se indica lo que es cada elemento y dicho formato se especifica 
+            <br>mediante CSS
+        </li>
+        <li>Todas estas especificaciones ya se aplicaban desde HTML4</li>
+    </ul>
+    <h3>Ventajas de CSS</h3>
+    <ul>
+        <li>CSS presenta un mayor control de la presentación del sitio web</li>
+        <li>Si necesitamos hacer modificaciones de la presentación, los hacemos en un solo lugar y no tnemos que editar
+            <br>todos los documentos HTML por separado. Es decir, podemos usar un único CSS para todos los HTML de nuestro proyecto.
+        </li>
+        <li>Mayor legibilidad. Permite interpretar y entender mejor y más fácil nuestra estructura y diseño a la hora de crearla</li>
+        <li>Una reducción de duplicidad de estilos diferentes en un mismo documento.</li>
+        <li>Es más fácil crear versiones diferentes de presentación para otros tipos de dispositivos: móviles, tablets, PCs, etc.</li>
+    </ul>
+    <h3>Desventajas de CSS</h3>
+    <ul>
+        <li>Dependiendo del navegador que utilicemos, la página que ha sido maquetada se verá de una manera u otra</li>
+        <li>El uso de las tablas nos permitía crear diseños complejos de forma mucho más sencilla que utilizando CSS</li>
+    </ul>
+    <hr>
+    <h1>Tipos de CSS que podemos usar en HTML</h1>
+    Los tipos de CSS que podemos usar en HTML, son los siguientes:
+    <ul>
+        <li><b>CSS Externo</b>: Un CSS externo, es un archivo con extensión .css. Se vincula al HTML a través de HEAD, mediante una etiqueta
+            <br>que se llama link. Su estructura es la siguiente:
+            <br> <b>link rel = "stylesheet" type ="text/css" href="style.css"</b>
+            <br>Es el tipo de CSS más utilizado porque separa de una manera clara la estructura (HTML) de la apariencia (CSS)
+        </li>
+        <li><b>CSS Interno</b>: Es un CSS que se establece en el HEAD pero a través de las etiquetas de apertura y cierr style</li>
+        <li><b>CSS Embebido / Incrustrado</b>: Es un CSS que se aplica directamente en la etiqueta (tag) de HTML, a través del atributo Style</li>
+    </ul>
+</body>
+</html>
