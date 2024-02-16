@@ -1,0 +1,39 @@
+div{
+    border:2px solid black;
+    text-align: center;
+    font-size:32px;
+    margin:10px;
+}
+#cajaPokemon{
+    background-color: crimson;
+    color:whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border:4px dotted blue;
+}
+img{
+    width: 400px;
+    height: 300px;;
+}
+.borde{
+    border:5px solid green;
+}
+.pkm{
+    padding:16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#electrico{
+    background-color: yellow;
+    color:black;
+}
+#planta{
+    background-color: green;
+    color:darkseagreen;
+}
+#agua{
+    background-color: blue;
+    color:aquamarine;
+}
+#fuego{
+    background-color: darkorange;
+    color:crimson;
+}

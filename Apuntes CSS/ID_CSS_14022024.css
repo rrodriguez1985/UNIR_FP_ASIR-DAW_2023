@@ -1,0 +1,17 @@
+body{
+    background-color: burlywood;
+    color:crimson;
+}
+table, tr, td{
+    border:2px solid black;
+}
+h2{
+    color:blue;
+}
+h3{
+    color:darkmagenta;
+}
+#titulo{
+    color:greenyellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

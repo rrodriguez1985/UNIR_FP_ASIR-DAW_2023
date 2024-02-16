@@ -1,0 +1,18 @@
+body{
+    background-color: burlywood;
+    color:crimson;
+}
+table, tr, td{
+    border:2px solid black;
+}
+h2{
+    color:blue;
+}
+h3{
+    color:darkmagenta;
+}
+/*Esto es una clase en CSS*/
+.titulo{
+    color:green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

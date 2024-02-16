@@ -1,0 +1,15 @@
+body{
+    background-color: coral;
+    color:green;
+    text-align: center;
+    
+}
+h1{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    color:blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*Esto es un comentario en CSS.*/
