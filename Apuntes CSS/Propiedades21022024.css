@@ -1,0 +1,18 @@
+body{
+    background-color: rgba(127, 255, 212, 0.687);
+    color:blue;
+}
+h1{
+    color:#FF0000;
+}
+ul{
+    color:rgb(235, 101, 12);
+}
+div{
+    border:2px solid blue;
+    text-align: justify;
+    margin:20px;
+    padding:10px;
+    font-size: 18px;
+    color:blueviolet;
+}

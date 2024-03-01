@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Propiedades21022024.css">
+    <title>Propiedades CSS</title>
+</head>
+<body>
+    <h1>Propiedades CSS: Colores</h1>
+    Para poder estalecer colores en CSS, podemos hacerlo de la siguiente manera:
+    <ul>
+        <li>Color: podemos establacer el color de texto de nuestra web.</li>
+        <li>background-color: nos permite establecer el color de fondo de nuestra web o elementos</li>
+    </ul>
+    <br>Para poder poner un color en un elemento CSS, podemos hacerlo de las siguientes maneras:
+    <ul>
+        <li>Palabra clave: Eje: red, blue, green, yellow, orange...</li>
+        <li>RGB (red, green, blue): Eje: rgb(46,58,205)</li>
+        <li>RGB con capa alpha: La capa alpha establece la tonalidad más clara o más oscura. Tiene valores de entre
+            <br>0 (más clara) o 1 (como más oscura). Eje: rgba(25,40,90,0.5)
+        </li>
+        <li>Hexadecimal:Valores que van del 0-9 y A-F. Ej:#FF5628</li>
+        <li>Hexadecimal abreviado:Tomamos como valor prioritario el primer digito: Eje: #FF5628 --> #F52</li>
+    </ul>
+    <hr>
+    <h1>Unidades en CSS</h1>
+    Dentro de las unidades de medida que podemos usar en CSS, podemos destacar dos grupos:
+    <ul>
+        <li><b>Unidades Absolutas:</b>son un tipo de medida fija (no cambian nunca). Son ideales para medios que no son variables,
+            <br> puesto que son poco flexibles a la hora de usarlos. P.E: pulgadas, cm, picas, mm, pt.
+        </li>
+        <li><b>Unidades Relativas:</b>son un tipo de medida más común en CSS, puesto que depende de otra resolución y tienen una 
+        <br> curva de aprendizaje aunque más compleja, son ideales para  diferentes tamaños y para hacer webs responsive.
+        <br>em (1em=16px), pixel, %, rem, etc.
+        </li>
+        <li><b>width:</b> determinar el tamaño de anchura de los elementos</li>
+        <li><b>height:</b> determinar el tamaño de altura de los elementos</li>
+    </ul>
+    <hr>
+    <h1>Modelos de Cajas en CSS</h1>
+    Todos los elementos en HTML, cuando creamos nuestras páginas web, están dentro de lo que se conoce como cajas (div)
+    <br>Las cajas que vamos a utilizar serán principalmente como se ha comentado div, y también podemos usar elementos o
+    <br>etiquetas semánticas ya predefinidas: nav, aside, footer, header, article, etc.
+    <br>A partir de ahora, en CSS cuando vayamos a maquetar, dejaremos de usar tablas por empezar a usar este tipo de cajas.
+    <br>El motivo principal, es que las tablas no son elemento muy flexibles para maquetar en HTML, y por lo tanto, nos limitan
+    <br> el que podamos adaptar nuestras web a distintos tipos de dispositivos.
+    <br>Las Propiedades que podemos aplicar a las cajas y que tenemos que tener en cuenta son las siguientes:
+    <ul>
+        <li><b>Margin:</b> Corresponde al margen existente entre el borde exterior de nuestra caja / elemento contenedor y nuestro navegador</li>
+        <li><b>Padding:</b> Corresponde al margen interior de nuestra caja, es decir, al espacio existente entre el contenido y el borde
+            <br> de nuestro elemento contenedor
+        </li>
+        <li><b>Contenido:</b> Son las etiquetas que van a ir dentro de nuestra caja o elemento contenedor.</li>
+    </ul>
+    <br>
+    <img src="img/modelo_cajas_css.png" alt="">
+    <br>Ejemplo de div con margin y Padding
+    <div>Esto es un ejemplo de div con margin y paddig. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores consectetur iusto alias cupiditate officia ab aliquam a? Reiciendis harum at tempore laboriosam optio consectetur impedit mollitia in asperiores officia.</div>
+</body>
+</html>
