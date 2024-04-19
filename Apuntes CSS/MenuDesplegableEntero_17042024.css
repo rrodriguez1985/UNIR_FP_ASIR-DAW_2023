@@ -1,0 +1,79 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #a9aaac;
+    color:#fff;
+    /*que la altura tenga un tamaño máximo del 100% de mi scope (zona de trabajo)
+    según la visión del navegador*/
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24252a;
+    /*Margen del relleno de la caja (padding) sea del 2% del tamaño de la anchura de la visión
+    del scope (zonda de trabajo) del navegador */
+    padding-left:2vw;
+}
+.cont-ul{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+    cursor:pointer;
+    /*Margen del relleno de la caja (padding) sea del 1.5% del tamaño de la anchura de la visión
+    del scope (zonda de trabajo) del navegador */
+    padding:1.5vw;
+    transition: all 0.3s ease 0s;
+}
+li:hover{
+    background-color: #008849;
+}
+.develop{
+    position: relative;
+}
+.ul-second{
+    display: none;
+    position:absolute;
+    margin-top:1.5vw;
+}
+.ul-second>li{
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    background-color: #24252a;
+}
+.ul-second>li:hover{
+    background-color: #008849;
+}
+.develop:hover>.ul-second{
+    display: block;
+}
+.ul-third{
+    position: absolute;
+    transform: translateX(100%);
+    right: 0px;
+    top:40%;
+    display: none;
+    background-color: #24252a;
+}
+.ul-third>li{
+    padding:1.5vw;
+    border-bottom: 1px solid #fff;
+}
+.front:hover>.ul-third{
+    display: block;
+}
+@media(max-width:900px)
+{
+    .logo-unir{
+        display: none;
+    }
+}
