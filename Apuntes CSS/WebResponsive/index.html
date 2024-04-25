@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Para el icono del menú-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Ejemplo Responsive Web</title>
+</head>
+<body>
+    <!-- container: será la caja principal la cuál contendrá todos los elementos de mi página web -->
+    <div class="container">
+        <!-- header: contendrá el título de la página web (e incluso, puede tener un logo y el menú de
+        navegación representado en una etiqueta nav) -->
+        <header class="rojo">
+            <h1>CFGS DAW/ASIR</h1>
+            <nav>
+                <div class="icon"><i class="fa fa-bars" style="font-size:24px;"></i></div>
+                <div class="menu_item">Inicio</div>
+                <div class="menu_item">Proyectos</div>
+                <div class="menu_item">Contacto</div>
+            </nav>
+        </header>
+        <!-- main: es una caja que contendrá las secciones más importantes de mi web: las imágenes y texto
+        aplicativo de la web -->
+        <main>
+            <section class="main_text">
+                <div>
+                    <h1 class="rojo">PROYECTO EJEMPLO WEB RESPONSIVE PARA LENGUAJE DE MARCAS</h1>
+                    <h3>Diseño Responsive</h3>
+                </div>
+                <div>
+                    <p>Página web responsive creada durante una de nuestras clases de lenguaje de marcas los míercoles</p>
+                    <p>Establecemos dos puntos de breakpoints, uno a 576px y otro a 992px en los que se producen cambios de layout</p>
+                    <p>El proceso de desarrollo se ha llevado a cabo empezando desde el diseño de pantallas más pequeño a más grande</p>
+                </div>
+            </section>
+            <section class="images">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.png" alt="">
+                <img src="img/7.jpg" alt="">
+                <img class="hidden" src="img/8.jpg" alt="">
+                <img src="img/9.jpg" alt="">
+            </section>
+        </main>
+        <!-- section: será una caja que contendrá artículos o noticias relevantes -->
+        <section class="novedades">
+            <h2 class="rojo">Novedades</h2>
+            <article>
+                <h3>24 de Abril del 2024</h3>
+                <h4>información CFGS ASIR</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, at. Ea impedit quos aliquam doloremque tempora voluptatum aliquid ad tempore nihil deleniti molestias in porro laboriosam temporibus, cumque deserunt ullam.</p>
+            </article>
+            <article>
+                <h3>24 de Abril del 2024</h3>
+                <h4>información CFGS DAM</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, at. Ea impedit quos aliquam doloremque tempora voluptatum aliquid ad tempore nihil deleniti molestias in porro laboriosam temporibus, cumque deserunt ullam.</p>
+            </article>
+            <article>
+                <h3>24 de Abril del 2024</h3>
+                <h4>información CFGS DAW</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, at. Ea impedit quos aliquam doloremque tempora voluptatum aliquid ad tempore nihil deleniti molestias in porro laboriosam temporibus, cumque deserunt ullam.</p>
+            </article>
+        </section>
+    </div>
+    <script></script>
+</body>
+</html>

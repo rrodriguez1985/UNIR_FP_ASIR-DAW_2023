@@ -1,0 +1,37 @@
+body{
+    background-color: blueviolet;
+}
+h1,p{
+    text-align: center;
+    color:white
+}
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 22px;;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+ul.galeria li{
+    float:left;
+    margin:80px 10px;
+    border:3px solid whitesmoke;
+    list-style: none;
+}
+ul.galeria li a img{
+    float:left;
+    width: 200px;
+    display: block;
+    margin-left:auto;
+}
+ul.galeria li a:hover img{
+    box-shadow: 4px 4px 10px whitesmoke;
+    transform: scale(1.5);
+}
